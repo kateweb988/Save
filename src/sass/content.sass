@@ -1,0 +1,4081 @@
+.box-modal__close 
+   z-index: 10
+   cursor: pointer
+   position: absolute
+   top: 10px
+   right: 10px
+   cursor: pointer
+   fill: white
+   z-index: 20
+   transition: 0.5s
+   &:hover 
+      .svg
+         transition: 0.5s
+         transform: rotate(90deg)
+.box-modal 
+   position: relative
+.popup-call__box 
+   position: absolute
+   top: 40%
+   margin-top: -330px
+   left: 50%
+   width: 532px
+   margin-left: -266px
+   height: 674px
+   border-radius: 3px
+   background: rgb(255, 255, 255)
+   overflow: hidden
+   padding: 40px 73px 53px
+   .partner__form label
+      font-size: 14px
+   .partner__item
+      margin-bottom: 25px
+   .partner__sub
+      margin-top: 20px
+   .partner__item:nth-child(1), .partner__item:nth-child(2)
+      width: 100%
+   .partner__item input
+      border: 1px solid rgb(210, 216, 220)
+      font-size: 16px
+      &:focus
+         border: 1px solid $green
+   .partner__btn
+      width: 100%
+.arcticmodal-container
+   background: rgba(48, 62, 72, 0.6)
+label.error
+   display: none !important
+input.error
+   border: 1px solid red !important
+.popup 
+   &__title 
+      color: rgb(48, 62, 72)
+      font-size: 30px
+      font-weight: 600
+      line-height: 36px
+      text-align: center
+      margin-bottom: 12px
+   &__text
+      color: rgb(48, 62, 72)
+      font-size: 16px
+      font-weight: 400
+      line-height: 26px
+      text-align: center
+      margin-bottom: 33px
+   &__thank 
+      margin: -60px auto 0
+      display: block
+#popup-thank
+   .popup-call__box 
+      height: 440px
+.close-popup
+   position: absolute
+   top: 0
+   right: 20px
+   cursor: pointer
+   width: 12px
+   transition: 0.5s 
+   height: 12px
+   fill: white
+   z-index: 20
+   &:hover 
+      transform: rotate(90deg)
+      fill: $green
+input::-webkit-input-placeholder 
+   color: rgb(118, 118, 118) !important
+input::-moz-placeholder
+   color: rgb(118, 118, 118) !important
+input:-ms-input-placeholder 
+   color: rgb(118, 118, 118) !important
+input:-moz-placeholder 
+   color: rgb(118, 118, 118) !important
+.menu-btn, .menu
+   display: none
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+   display: none
+.custom-checkbox 
+   position: absolute
+   z-index: -1
+   opacity: 0
+.custom-checkbox+label 
+   display: flex
+   align-items: center
+   user-select: none
+   font-weight: 400
+   font-size: 16px
+   line-height: 130%
+   color: #494949
+   cursor: pointer
+   &:hover
+      &:before 
+         border: 1px solid $green
+.custom-checkbox+label::before
+   content: ''
+   display: inline-block
+   flex-shrink: 0
+   display: flex
+   flex-grow: 0
+   background-repeat: no-repeat
+   background-position: center center
+   background-size: 8px
+   background: #FFFFFF
+   flex: 1 0 auto
+   transition: 0.2s
+   width: 20px
+   height: 20px
+   border-radius: 5px
+   border: 1px solid #e9e9e9
+   background-color: #ffffff
+   max-width: 20px
+   margin-right: 11px
+.custom-checkbox:checked+label::before 
+   background: url(/img/check2.png) no-repeat center center
+   background-size: 8px
+.swiper-pagination
+   display: flex
+   justify-content: center
+   bottom: 19px
+   position: absolute
+   z-index: 2
+.swiper-pagination-bullet
+   width: 52px
+   height: 2px
+   background-color: #ffffff
+   opacity: 0.2
+.swiper-pagination-bullet-active
+   background-color: $green !important
+   opacity: 1
+.tabs__pane 
+   display: none
+.tabs__pane_show 
+   display: block
+.tabs__btn_active
+   color: #20252d !important
+   position: relative
+.swiper-button-next, .swiper-button-prev
+   z-index: 9
+.swiper-button-disabled
+   opacity: 0
+   pointer-events: none
+.bread 
+   display: flex
+   align-items: center
+   justify-content: flex-start
+   margin-bottom: 29px
+   flex-wrap: wrap
+   a 
+      color: rgb(48, 62, 72)
+      font-size: 14px
+      font-weight: 400
+      line-height: 17px
+      &:after 
+         content: "/"
+         display: inline-block
+         margin: 0 14px
+         color: rgb(48, 62, 72) !important
+      &:last-child
+         color: rgb(175, 182, 187)
+         &:after 
+            display: none
+      &:hover 
+         color: $green
+.mob 
+   display: none
+/* SELECT */
+.selectCF
+   margin: 0
+   padding: 0
+   display: inline-block
+   position: relative
+   color: black
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5s
+   width: max-content
+   height: auto
+   background: transparent
+.selectCF li
+   list-style: none
+   cursor: pointer
+   perspective: 900px
+   -webkit-perspective: 900px
+   text-align: left
+   width: 100%
+   height: 100%
+   max-height: 100%
+   box-sizing: border-box
+.selectCF > li
+   position: relative
+   border: none
+.selectCF span
+   display: flex
+   height: auto
+   line-height: 100%
+   color: #888888
+   z-index: 1
+   align-items: center
+.selectCF .arrowCF
+   transition: .3s
+   -webkit-transition: .3s
+   width: 7px
+   height: 5px
+   text-align: center
+   vertical-align: top
+   background: url(/img/down-arrow.png) no-repeat !important
+   position: absolute
+   right: -16px
+   top: 8px
+.selectCF .titleCF
+   font-size: 16px
+   font-weight: 400
+   text-overflow: ellipsis
+   color: #000000 !important
+   white-space: nowrap
+   width: max-content !important
+   height: max-content !important
+   box-sizing: border-box
+   background: transparent !important
+.selectCF .searchCF
+   position: absolute
+   top: 3px
+   right: 0
+   z-index: -1
+@keyframes searchActive 
+   from
+      transform: rotateY(180deg) 
+   to
+      transform: rotateY(0deg)
+@-moz-keyframes searchActive 
+   from
+      transform: rotateY(180deg) 
+   to
+      transform: rotateY(0deg)
+@-webkit-keyframes searchActive 
+   from
+      -webkit-transform: rotateY(180deg) 
+   to
+      -webkit-transform: rotateY(0deg)
+.searchActive .searchCF
+   z-index: 1
+   animation: searchActive 0.3s alternate 1
+   -moz-animation: searchActive 0.3s alternate 1
+   -webkit-animation: searchActive 0.3s alternate 1
+.searchActive .titleCF
+   opacity: 0
+.selectCF .searchCF input
+   border: none !important
+   padding: 0
+   margin: 0
+   width: auto
+   height: auto
+   background: transparent
+.selectCF .searchCF input:active, .selectCF .searchCF input:focus
+   box-shadow: none !important
+   border: none !important
+   outline: none !important
+.selectCF li ul
+   display: none
+   position: absolute
+   top: 100%
+   left: 1px
+   width: 100%
+   background: grey
+   max-height: 255px
+   overflow-y: auto
+   transition: .2s
+   -webkit-transition: .2s
+   z-index: 2
+   box-sizing: border-box
+   padding-bottom: 10px
+   border-top: none
+.selectCF li ul li
+   padding: 9px 0 9px 10px
+   transition: .2s
+   -webkit-transition: .2s
+   overflow: hidden
+   text-overflow: ellipsis
+   white-space: nowrap
+   border-top: none
+   box-sizing: border-box
+   height: 40px
+   font-weight: 500
+   font-size: 16px
+   line-height: 22px
+   color: #FAFAFF
+   &:last-child
+      border-radius: 0px 0px 5px 5px
+      padding-bottom: 10px
+   &:hover 
+      color: $green
+.onCF .arrowCF
+   transform: rotate(180deg)
+   -webkit-transform: rotate(180deg)
+@-moz-keyframes effect1 
+   from
+      transform: translateY(15px)
+      opacity: 0
+   to
+      transform: translateY(0px)
+      opacity: s1
+@-webkit-keyframes effect1 
+   from
+      -webkit-transform: translateY(15px) 
+      opacity: 0
+   to
+      -webkit-transform: translateY(0px)
+      opacity: 1
+.onCF li ul
+   display: block
+   position: absolute
+   -moz-animation: effect1 0.3s alternate 1
+   -webkit-animation: effect1 0.3s alternate 1
+   left: -6.55px
+   top: 22px
+   border-radius: 0 0 4px 4px
+   width: 100%
+   min-width: max-content
+   padding-right: 10px
+ul.info li, #event-change
+   color: #FFF
+ul.info
+   padding: 0
+   display: none
+ul.info li
+   display: inline-block
+   border-radius: 5px
+   padding: 0 5px
+.accordeon, .accordeon2
+   padding: 5px 0 30px
+   border-bottom: 1px solid #ececec
+   margin-bottom: 26px
+   width: 100%
+.accordeon__item 
+   width: 100%
+   list-style-type: none
+.accordeon__item:first-child .accordeon__button
+   margin-top: 0
+.accordeon__button
+   width: 100%
+   text-align: left
+   border: none
+   cursor: pointer
+   position: relative
+   transition: all 0.5s ease
+   font-size: 17px
+   font-weight: 700
+   color: #282828
+   display: flex
+   justify-content: space-between
+.accordeon__button:hover
+   color: $green
+.accordeon__button:after
+   content: ""
+   position: absolute
+   right: 0px
+   background: url(/img/down-arrow.png) no-repeat !important
+   width: 7px
+   left: inherit
+   height: 5px
+   top: 8px
+   bottom: inherit
+   margin-bottom: -20px
+   transition: all 0.5s ease
+.accordeon__button.active:after
+   content: ""
+   position: absolute
+   right: 0px
+   background: url(/img/down-arrow.png) no-repeat !important
+   width: 7px
+   left: inherit
+   height: 5px
+   bottom: 30%
+   margin-bottom: -20px
+   transition: all 0.5s ease
+   transform: rotate(180deg)
+   -webkit-transform: rotate(180deg)
+.accordeon__panel, .accordeon__panel2
+   max-height: 0
+   overflow: hidden
+   margin-left: 0
+   transition: all 0.5s ease
+.panel__text, .panel__text2
+   list-style-type: none
+   padding-top: 0px
+   max-width: 688px
+   margin-top: 30px
+.panel__info
+   font-weight: 300
+   font-size: 16px
+   line-height: 140%
+   margin-bottom: 20px
+   &:last-child
+      margin-bottom: 0
+.autoplay-progress, .autoplay-progress2, .autoplay-progress3
+   position: absolute
+   right: 16px
+   bottom: 16px
+   z-index: 10
+   width: 44px
+   height: 44px
+   display: flex
+   align-items: center
+   justify-content: center
+   font-weight: bold
+   color: transparent
+   top: 0px
+   left: 55px
+   z-index: 1
+   border: 2px solid rgba(0, 0, 0, 0.2)
+   border-radius: 50%
+.autoplay-progress svg, .autoplay-progress2 svg , .autoplay-progress3 svg 
+   --progress: 0
+   position: absolute
+   left: -5px
+   top: -4.5px
+   z-index: 10
+   width: 49.635px
+   height: 49.635px
+   stroke-width: 2px
+   stroke: white
+   fill: none
+   stroke-dashoffset: calc(125.6 * (1 - var(--progress)))
+   stroke-dasharray: 125.6
+   transform: rotate(-90deg)
+// .autoplay-progress2
+//    border: 2px solid #EBEBEB
+//    svg 
+//       stroke: #464646
+//       left: -6px
+.header 
+   .pag 
+      bottom: 8%
+      left: 3%
+      top: inherit
+      right: inherit
+   &__box 
+      height: 800px
+      width: 100%
+      overflow: hidden
+      position: relative
+   &__wrap 
+      position: relative
+      height: auto 
+
+   .container
+      position: relative
+   &-arr 
+      position: relative
+      bottom: 0
+      left: 0
+      z-index: 2
+      margin-right: 12px
+      opacity: 2
+      cursor: pointer
+      .svg 
+         position: relative
+         z-index: -1
+         &:hover 
+            path 
+               fill: $green
+   &__arrows 
+      align-items: center
+      position: absolute
+      bottom: 45px
+      left: inherit
+      right: 2%
+      z-index: 2
+   .swiper-button-prev1 
+      width: 44px
+      border: 2px solid #EBEBEB
+      height: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      padding-left: 2px
+      border-radius: 50%
+   .swiper-button-next1 
+      width: 44px
+      height: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+   &__content 
+      width: 100%
+      max-width: 660px 
+      h1 
+         margin-bottom: 12px
+      p 
+         color: rgb(255, 255, 255)
+         font-size: 17px
+         font-weight: 400
+         line-height: 27px
+         margin-bottom: 50px
+   &__links 
+      align-items: flex-end
+   &__btn 
+      width: 174px
+      height: 54px
+      &:hover 
+         background: rgba(43, 176, 98, 0.6)
+         color: white
+         .svg 
+            path 
+               fill: white
+   &__bg 
+      position: absolute
+      width: 100%
+      height: 100%
+      object-fit: cover 
+      z-index: 0
+      left: 0
+      top: 0
+      img 
+         height: 100%
+   .swiper1 
+      overflow: hidden
+      height: 100%
+      width: 100%
+      .swiper-slide
+         height: 100%
+         background: #030A0B
+         width: 100%
+         padding: 293px 0 216px
+   &__btn 
+      width: 341.28px
+      height: 63px
+      border-radius: 3px
+      margin-right: 45px
+   &__calc
+      align-items: center
+      padding-bottom: 15px
+      border-bottom: 1px solid white
+      color: rgb(255, 255, 255)
+      font-size: 16px
+      font-weight: 400
+      line-height: 19px
+      text-transform: uppercase
+      padding-right: 34px
+      position: relative
+      top: -3px
+      .svg 
+         margin-left: 14px
+      &:hover 
+         color: black
+         border-bottom: 1px solid black
+         .svg 
+            path 
+               fill: black
+.menu2 
+   position: fixed
+   top: 0
+   left: 50%
+   margin-left: -25%
+   width: 50%
+   height: auto
+   padding: 40px 
+   background: white
+   transform: translatey(-100%)
+   transition: transform 0.5s
+   z-index: 20
+   border-radius: 0 0 20px 20px
+   overflow: hidden
+   border: 1px solid #D7D7D7
+   border-top: none 
+   h2 
+      margin-bottom: 20px
+.menu2.active
+   transform: translatey(0)
+.menu-btn2.active 
+   overflow: visible
+   position: fixed
+   top: 1%
+   right: 28%
+   z-index: 100
+   width: 30px
+   height: 30px
+   background: url(/img/close.svg) no-repeat !important
+   .svg 
+      display: none
+.mobile__form
+   position: relative
+   input 
+      width: 100%
+      padding: 9px 20px
+      border-radius: 10px
+      height: 44px
+      border: 1px solid #D7D7D7
+      &:focus
+         border: 1px solid $green !important
+   button 
+      position: absolute
+      background: none 
+      border: none
+      right: 7px
+      transition: 0.5s
+      bottom: 8px
+      &:hover 
+         path 
+            fill: $green
+.menu-btn2
+   background: transparent
+   border: none
+   cursor: pointer
+   margin-left: 0
+   z-index: 5
+   position: absolute
+   top: 23px
+   right: 111px
+   &:hover 
+      .svg 
+         path 
+            fill: $green
+.nav 
+   .container
+      max-width: 1328px
+   &__box 
+      align-items: center
+      justify-content: space-between
+   &__logo 
+      display: block
+      margin-right: 35px
+      img 
+         width: 100%
+         height: 100%
+         object-fit: contain
+   &__top 
+      align-items: center
+      justify-content: space-between
+      padding: 16.5px 0
+      border-bottom: 1px solid rgb(219, 227, 233)
+      justify-content: flex-start
+   &__tel 
+      align-items: center
+      color: rgb(48, 62, 72)
+      font-size: 14px
+      font-weight: 400
+      line-height: 17px
+      margin-right: 38px
+      img 
+         margin-right: 10px
+         position: relative
+         top: 2px
+   &__call 
+      align-items: center
+      color: rgb(43, 176, 98)
+      font-size: 13px
+      font-weight: 500
+      line-height: 15px
+      text-transform: uppercase
+      margin-right: 61px
+      .svg 
+         margin-right: 9px
+         position: relative
+         top: -0.5px
+      &:hover 
+         color: #000
+         .svg 
+            path 
+               fill: black
+   &__mail 
+      color: rgb(156, 173, 186)
+      font-size: 14px
+      font-weight: 400
+      line-height: 17px
+      margin-right: 43px
+      position: relative
+      top: -3px
+      img 
+         margin-right: 9px
+         position: relative
+         top: 2px
+   &__socials 
+      margin-left: auto
+      position: relative
+      top: -3px
+      a 
+         display: flex
+         align-items: center
+         justify-content: center
+         width: 32px
+         height: 32px
+         border: 1px solid rgb(219, 222, 225)
+         border-radius: 50% 
+         margin-right: 11px
+         &:last-child
+            margin-right: 0
+         &:hover 
+            background: $green
+            .svg 
+               path 
+                  fill: white
+               .pp 
+                  fill: $green !important
+   &__bottom 
+      padding: 25px 0 
+      align-items: center
+      justify-content: flex-start
+      position: relative
+      ul 
+         display: flex
+         flex-wrap: wrap 
+         li 
+            margin-right: 50px
+            &:last-child
+               margin-right: 0
+            a 
+               color: rgb(48, 62, 72)
+               font-size: 14px
+               font-weight: 500
+               line-height: 17px
+               text-transform: uppercase
+               &:hover 
+                  color: $green
+   &__menu 
+      margin-right: 46px
+      &:hover 
+         .svg 
+            path 
+               fill: $green
+   &__info 
+      align-items: center
+      margin-left: auto
+   &__item 
+      margin-left: 38px
+      position: relative
+      span 
+         display: flex
+         align-items: center
+         justify-content: center
+         width: max-content
+         height: 13.98px
+         background: $green
+         position: absolute
+         top: -5px
+         right: -5px
+         padding: 0 4px 
+         border-radius: 50% 
+         color: rgb(255, 255, 255)
+         font-size: 9px
+         font-weight: 500
+         line-height: 11px
+         text-transform: uppercase
+      &:hover 
+         .svg 
+            path 
+               fill: $green
+.pag 
+   display: flex
+   top: inherit
+   bottom: 5%
+   left: 5%
+   position: absolute
+   z-index: 5
+   .swiper-pagination-bullet
+      width: 6.72px
+      height: 6.72px
+      transition: 0.3s
+      background: rgb(255, 255, 255)
+      margin-right: 20px !important
+      opacity: 1
+      border-radius: 50%
+      &:last-child
+         margin-right: 0
+   .swiper-pagination-bullet-active
+      background: $green
+      width: 45px
+      border-radius: 100px
+.info 
+   padding-bottom: 45px
+   &__row 
+      width: 100%
+      max-width: 1372px 
+      justify-content: space-between
+      margin: 60px auto 77px
+   &__block 
+      width: 60px
+      height: 60px
+      align-items: center
+      justify-content: center
+      margin: 0 auto 23px
+   &__item 
+      text-align: center
+      width: 24%
+      h3 
+         margin-top: 0
+         margin-bottom: 8px
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 500
+         line-height: 25px
+         text-transform: uppercase
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 300
+         line-height: 26px
+   &__wrap 
+      justify-content: space-between
+      flex-wrap: wrap
+   &__el 
+      width: 24.5%
+      padding: 55px
+      overflow: hidden
+      position: relative
+      height: 380px
+      display: flex
+      flex-direction: column 
+      align-items: flex-start
+      margin-bottom: 10px
+      img 
+         position: absolute
+         z-index: -1
+         width: 100%
+         height: 100%
+         left: 0
+         top: 0
+      h3 
+         margin-top: auto
+         margin-bottom: 0
+         color: rgb(255, 255, 255)
+         font-size: 24px
+         font-weight: 600
+         line-height: 34px
+         text-transform: uppercase
+      p 
+         color: rgb(255, 255, 255)
+         font-size: 13px
+         font-weight: 400
+         transition: 0.5s
+         line-height: 15px
+         text-transform: uppercase
+         margin-top: 15px
+         opacity: 0
+         margin-bottom: -41px
+         .svg 
+            margin-left: 10px
+      &:hover 
+         p
+            margin-bottom: 0
+            opacity: 1
+   .container
+      max-width: 1831px
+   &__area 
+      margin-top: 80px
+      justify-content: space-between
+   &__per 
+      align-items: center
+      justify-content: space-between
+      width: 24.59%
+      height: 144px
+      background: rgb(249, 249, 249)
+      padding: 45px
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 22px
+         font-weight: 500
+         line-height: 25px
+         text-transform: uppercase
+         margin-bottom: 20px
+      a 
+         align-items: center
+         font-size: 13px
+         font-weight: 500
+         line-height: 15px
+         text-transform: uppercase
+         display: flex
+         color: $green
+         .svg 
+            margin-left: 10px
+         &:hover 
+            color: #000
+            .svg 
+               path 
+                  fill: black
+.what 
+   padding: 50px 0 125px
+   .container
+      max-width: 1372px
+   &__sub 
+      color: rgb(48, 62, 72)
+      font-size: 20px
+      font-weight: 600
+      line-height: 24px
+      margin-bottom: 13px
+   &__title 
+      color: rgb(48, 62, 72)
+      font-size: 50px
+      font-weight: 300
+      line-height: 80px
+      margin-bottom: 52px
+   &__box 
+      align-items: flex-start
+      margin-bottom: 67px
+      img 
+         width: 47.55%
+         height: 641px
+         object-fit: cover
+         margin-right: 57px
+   &__content 
+      width: 100%
+      max-width: 45.8% 
+      padding-top: 20px
+   &__el 
+      margin-bottom: 40px
+      &:last-child
+         margin-bottom: 0
+   &__name 
+      color: rgb(48, 62, 72)
+      font-size: 30px
+      font-weight: 500
+      line-height: 48px
+      margin-bottom: 11px
+   &__text 
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 400
+      line-height: 30px
+   &__row 
+      justify-content: space-between
+      margin-bottom: 107px
+   &__sum 
+      color: rgb(48, 62, 72)
+      font-size: 50px
+      font-weight: 600
+      line-height: 59px
+      text-align: center
+      margin-bottom: 3px
+      span 
+         font-weight: 400
+         position: relative
+         top: -2px
+      sup 
+         font-size: 26px
+         font-weight: 500
+   &__info 
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 400
+      line-height: 26px
+      text-align: center
+   &-wrap 
+      &__box 
+         justify-content: space-between
+         align-items: flex-start
+      &__content 
+         width: 100%
+         max-width: 27.3%
+         &_1 
+            text-align: right
+            .what-wrap__item_last
+               margin-top: 69px
+         &_2 
+            text-align: left
+            .what-wrap__name
+               margin-left: inherit
+               margin-right: auto
+               color: rgb(48, 62, 72)
+               &:after 
+                  background: rgb(207, 207, 207)
+            .what-wrap__item
+               justify-content: flex-start
+               margin-bottom: 69px
+               .what-wrap__area 
+                  order: 2
+               img 
+                  margin-left: 0
+                  margin-right: 32px
+            .what-wrap__item_last
+               margin-bottom: 0
+      &__title 
+         margin-bottom: 27px
+         color: rgb(48, 62, 72)
+         font-size: 40px
+         font-weight: 300
+         line-height: 50px
+         text-align: center
+      &__sub 
+         width: 100%
+         max-width: 700px
+         text-align: center
+         margin: 0 auto 80px
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 300
+         line-height: 29px
+      &__pic 
+         margin: 84px 65px 0
+      &__item 
+         margin-bottom: 40px
+         justify-content: flex-end
+         align-items: flex-start
+         &:last-child
+            margin-bottom: 0
+         span 
+            color: rgb(48, 62, 72)
+            font-size: 18px
+            font-weight: 600
+            line-height: 26px
+         p 
+            color: rgb(48, 62, 72)
+            font-size: 16px
+            font-weight: 300
+            line-height: 26px
+            margin-top: 9px
+         img 
+            margin-left: 32px
+      &__name 
+         position: relative
+         color: rgb(43, 176, 98)
+         font-size: 28px
+         font-weight: 600
+         line-height: 26px
+         width: max-content
+         margin-left: auto
+         margin-bottom: 74px
+         &:after 
+            width: 100%
+            height: 8px
+            background: rgb(219, 242, 228)
+            display: block
+            z-index: -1
+            position: absolute
+            bottom: 0
+            left: 0  
+            content: ""
+   .header__links
+      justify-content: center
+      margin-top: 10px
+   .header__btn
+      width: 292px
+   .header__calc
+      padding-right: 30px
+      color:rgb(48, 62, 72) !important
+      border-bottom: 1px solid rgb(48, 62, 72)
+      .svg 
+         path 
+            fill: rgb(48, 62, 72)
+      &:hover 
+         color: $green !important
+         border-bottom: 1px solid $green
+         .svg 
+            path 
+               fill: $green
+.calc 
+   background: rgb(250, 250, 250)
+   padding: 60px 0 70px
+   .what-wrap__sub
+      margin-bottom: 60px
+   &__box 
+      border-radius: 5px
+      background: rgb(255, 255, 255)
+      width: 100%
+      padding: 28px 47px 49px
+      max-width: 1300px
+      margin: 0 auto
+   &__title 
+      color: rgb(48, 62, 72)
+      font-size: 24px
+      font-weight: 500
+      line-height: 28px
+      text-align: center
+      margin-bottom: 50px
+   &__flex 
+      flex-wrap: wrap
+      justify-content: flex-start
+   &__item 
+      height: 241px
+      position: relative
+      transition: 0.5s 
+      width: 22.8%
+      padding: 0px 28px
+      margin: 0 35px 35px 0
+      background: rgb(255, 255, 255)
+      .form-check-label
+         display: flex
+         flex-direction: column 
+         align-items: center
+      &:nth-child(4n)
+         margin-right: 0
+      img 
+         margin: 24px 0 17px 
+         width: 100%
+         height: 159px
+         border-radius: 3px
+         object-fit: cover
+   .custom-checkbox + label::before
+      position: absolute
+      width: 100%
+      border: 1px solid rgb(225, 225, 225)
+      border-radius: 3px
+      height: 100%
+      background: transparent
+      max-width: 100%
+      margin-right: 0 !important
+   .custom-checkbox:checked + label::before
+      border: 1px solid $green
+   &__row 
+      align-items: center
+      justify-content: space-between
+      margin-top: 30px
+   &__per 
+      width: 100%
+      max-width: 895px
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 400
+         line-height: 19px
+         margin-bottom: 15px
+   &__progress
+      align-items: center
+      width: 100%
+      height: 12px
+      border-radius: 5px
+      background: rgb(208, 240, 221)
+      justify-content: center
+      position: relative
+      div
+         position: absolute
+         left: 0
+         border-radius: 5px
+         top: 0
+         z-index: 1
+         width: 14%
+         height: 100%
+         background: $green
+   &__two 
+      .calc__progress 
+         div
+            width: 28%
+   &__prev 
+      margin-top: 15px
+      cursor: pointer
+      .svg
+         margin-left: 0
+         transform: rotate(180deg)
+         margin-right: 20px
+.sale 
+   padding: 26px 0 60px
+   background: rgb(250, 250, 250)
+   h2 
+      text-align: center
+      margin-bottom: 60px
+   &__box 
+      position: relative
+      height: 460px
+      width: 100%
+      max-width: 1300px
+      margin: 0 auto
+   .swiper11
+      overflow: hidden
+      width: 100%
+      height: 100%
+      .swiper-slide
+         position: relative
+         height: 100%
+         width: 100%
+         text-align: center
+         padding: 88px 20px
+         img 
+            position: absolute
+            z-index: -1
+            width: 100%
+            height: 100%
+            object-fit: cover 
+            top: 0
+            left: 0
+         h3 
+            color: rgb(255, 255, 255)
+            font-size: 40px
+            font-weight: 600
+            line-height: 50px
+            text-align: center
+            margin: 0 auto 17px
+            width: 100%
+            max-width: 650px
+         p 
+            width: 100%
+            max-width: 550px 
+            color: rgb(255, 255, 255)
+            font-size: 16px
+            font-weight: 400
+            line-height: 26px
+            text-align: center
+            margin: 0 auto 40px 
+   &__btn 
+      margin: 0 auto 
+      width: 231px
+      &:hover 
+         background: rgba(43, 176, 98, 0.6)
+         color: white
+         .svg 
+            path 
+               fill: white
+   .swiper-button-prev11
+      width: 44px
+      border: 2px solid rgba(255, 255, 255, 0.2)
+      height: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      padding-left: 2px
+      border-radius: 50%
+      cursor: pointer
+   .swiper-button-next11
+      width: 44px
+      height: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      cursor: pointer
+   .header__arrows
+      width: 100%
+      justify-content: space-between
+      right: 0
+      padding: 0 60px
+      bottom: inherit 
+      top: 48%
+   .autoplay-progress2
+      left: inherit
+      right: 60px
+      z-index: -1
+.sales 
+   .container
+      max-width: 1328px
+   &__item
+      position: relative
+      height: 100%
+      width: 48.85%
+      text-align: center
+      margin-bottom: 50px
+      padding: 63px 20px
+      img 
+         position: absolute
+         z-index: -1
+         width: 100%
+         height: 100%
+         object-fit: cover 
+         top: 0
+         left: 0
+      h3 
+         color: rgb(255, 255, 255)
+         font-size: 30px
+         font-weight: 600
+         line-height: 40px
+         text-align: center
+         margin: 0 auto 17px
+         width: 100%
+         max-width: 650px
+      p 
+         width: 100%
+         max-width: 550px 
+         color: rgb(255, 255, 255)
+         font-size: 16px
+         font-weight: 400
+         line-height: 26px
+         text-align: center
+         margin: 0 auto 40px 
+   &__box 
+      margin-top: 40px
+      justify-content: space-between
+      flex-wrap: wrap 
+.pop 
+   padding: 62px 0 45px
+   h2 
+      text-align: center
+      margin-bottom: 20px
+   .tabs__nav 
+      justify-content: center
+      flex-wrap: wrap 
+   .tabs__btn
+      display: flex
+      align-items: center
+      justify-content: center
+      width: max-content
+      box-sizing: border-box
+      border: 1px solid rgb(228, 228, 228)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      padding: 0 29px 
+      color: rgb(43, 176, 98)
+      font-size: 15px
+      font-weight: 400
+      margin: 3px
+      height: 40px
+      line-height: 18px
+      transition: 0.5s
+      &:hover 
+         border: 1px solid $green
+   .what-wrap__sub
+      margin-bottom: 50px
+   .container
+      max-width: 1727px
+   .tabs__btn_active
+      color: white !important
+      background: $green !important
+      border: 1px solid $green
+   &__box 
+      display: grid
+      grid-template-rows: 1fr 1fr 1fr
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+      gap: 1px
+      height: 100%
+      margin-top: 50px
+   &__item 
+      flex-direction: column
+      display: flex
+      min-height: 307px
+      position: relative
+      max-height: 490px
+      align-items: flex-start
+      transition: 0.5s
+      padding: 44px 46px
+      img 
+         position: absolute
+         width: 100%
+         height: 100%
+         object-fit: cover 
+         z-index: -1
+         top: 0
+         left: 0
+      &:nth-child(1)
+         grid-row-start: 1 
+         grid-column-start: 1 
+         grid-row-end: 2 
+         grid-column-end: 2 
+      &:nth-child(2)
+         grid-row-start: 1 
+         grid-column-start: 2 
+         grid-row-end: 3 
+         grid-column-end: 3 
+      &:nth-child(3)
+         grid-row-start: 1 
+         grid-column-start: 3 
+         grid-row-end: 2 
+         grid-column-end: 4 
+      &:nth-child(4)
+         grid-row-start: 1 
+         grid-column-start: 4 
+         grid-row-end: 2 
+         grid-column-end: 5 
+      &:nth-child(5)
+         grid-row-start: 1 
+         grid-column-start: 5 
+         grid-row-end: 2 
+         grid-column-end: 6 
+      &:nth-child(6)
+         grid-row-start: 2 
+         grid-column-start: 1 
+         grid-row-end: 4 
+         grid-column-end: 2 
+      &:nth-child(7)
+         grid-row-start: 3 
+         grid-column-start: 2 
+         grid-row-end: 4 
+         grid-column-end: 3 
+         position: relative
+         top: -124px
+      &:nth-child(8)
+         grid-row-start: 2 
+         grid-column-start: 3 
+         grid-row-end: 4 
+         grid-column-end: 5
+      &:nth-child(9)
+         grid-row-start: 2 
+         grid-column-start: 5
+         grid-row-end: 4 
+         grid-column-end: 6   
+      p 
+         margin-top: auto
+         transition: 0.5s 
+         color: rgb(255, 255, 255)
+         font-size: 20px
+         font-weight: 600
+         line-height: 30px
+         text-transform: uppercase
+         position: relative
+         z-index: 2
+         opacity: 0
+      .svg 
+         opacity: 0
+         position: relative
+         z-index: 2
+      &:after 
+         opacity: 0
+         position: absolute
+         z-index: 0
+         content: ""
+         left: 0
+         top: 0
+         z-index: 1
+         background: rgba(43, 176, 98, 0.5)
+         width: 100%
+         height: 100%
+         transition: 0.5s
+      &:hover 
+         .svg, p, &:after 
+            opacity: 1
+            transition: 0.5s
+   &__btn 
+      margin: -40px auto 0 
+      width: 231.39px
+      height: 63px
+      box-sizing: border-box
+      border: 1px dashed rgb(134, 198, 160)
+      border-radius: 3px
+      align-items: center
+      justify-content: center
+      color: rgb(43, 176, 98)
+      font-size: 16px
+      font-weight: 400
+      transition: 0.5s
+      line-height: 19px
+      text-transform: uppercase
+      .svg 
+         margin-left: 19px
+      &:hover 
+         background: $green
+         color: white 
+         .svg 
+            path
+               fill: white
+.art 
+   padding: 45px 0 113px
+   .container
+      max-width: 1334px
+   h2 
+      text-align: center
+      margin-bottom: 55px
+   &__wrap
+      position: relative
+   &__btn 
+      width: 202.31px
+      height: 55.08px
+      position: absolute
+      right: 0
+      color: rgb(43, 176, 98)
+      border: 2px solid rgb(207, 239, 220)
+      top: 0
+      background: rgb(207, 239, 220)
+      .svg 
+         margin-left: 19px
+   &__box 
+      justify-content: space-between
+   &__item 
+      width: 30.7%
+      text-align: center
+      position: relative
+      h3 
+         color: rgb(48, 62, 72)
+         font-size: 19px
+         font-weight: 600
+         line-height: 28px
+         margin: 0 0 13px
+      a 
+         align-items: center
+         color: rgb(43, 176, 98)
+         font-size: 13px
+         font-weight: 500
+         line-height: 15px
+         text-transform: uppercase
+         justify-content: center
+         .svg 
+            margin-right: 8px
+            position: relative
+            top: -1px
+         &:hover 
+            color: #000
+            .svg 
+               path 
+                  fill: black
+   &__pic 
+      width: 100%
+      height: 274.39px
+      margin-bottom: 15px
+      object-fit: cover
+   &__name 
+      align-items: center
+      color: rgb(119, 119, 119)
+      font-size: 14px
+      font-weight: 400
+      line-height: 24px
+      margin-bottom: 13px
+      justify-content: center
+      img 
+         margin: 0 6px 0 11px
+   &__text 
+      color: rgb(119, 119, 119)
+      font-size: 13.9px
+      font-weight: 400
+      line-height: 24px
+      margin-bottom: 25px
+      -webkit-line-clamp: 4
+      -webkit-box-orient: vertical
+      overflow: hidden
+      text-overflow: ellipsis
+      display: block
+      display: -webkit-box
+   &__local 
+      position: absolute
+      flex-direction: column
+      top: 9px
+      left: 2px
+      width: 50px
+      height: 50px
+      background: rgb(255, 255, 255)
+      align-items: center
+      justify-content: center
+      color: rgb(48, 62, 72)
+      font-size: 12px
+      font-weight: 400
+      text-align: center
+      span 
+         display: block
+         font-weight: 500
+         text-align: center
+         font-size: 19px
+.par 
+   background: rgb(250, 250, 250)
+   padding-top: 53px
+   .swiper22 
+      overflow: hidden
+      padding-bottom: 80px
+      width: 79.5%
+      margin: 0 auto
+      padding: 0 50px 80px
+      position: relative
+      .swiper-slide
+         display: flex
+         position: relative
+         z-index: 6
+         align-items: center
+         justify-content: center
+         background: rgb(255, 255, 255)
+         height: 88px
+         overflow: hidden
+         transition: 0.5s 
+         img 
+            object-fit: contain
+         &:hover 
+            box-shadow: 0px 26px 45.1px 0px rgba(0, 0, 0, 0.1)
+   h2 
+      text-align: center
+      margin-bottom: 47px
+   .container
+      position: relative
+   .swiper-button-prev22
+      width: 44px
+      border: 2px solid rgba(0, 0, 0, 0.1)
+      height: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      padding-left: 2px
+      border-radius: 50%
+      cursor: pointer
+   .swiper-button-next22
+      width: 44px
+      height: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      cursor: pointer
+   .header__arrows
+      width: 96%
+      justify-content: space-between
+      right: 28px
+      padding: 0 60px
+      bottom: inherit 
+      top: 44%
+   .autoplay-progress3
+      left: inherit
+      right: 60px
+      z-index: -1
+      svg
+         stroke: $green
+.row 
+   padding: 101px 0 110px 
+   &__box 
+      justify-content: space-between
+      width: 100%
+      max-width: 1300px
+      margin: 0 auto
+   &__item 
+      overflow: hidden
+      width: 24%
+      height: 204.78px
+      transition: 0.5s
+      box-sizing: border-box
+      border: 1px solid rgb(228, 228, 228)
+      background: rgb(255, 255, 255)
+      padding: 34px 24px 28px 35px 
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 23px
+         font-weight: 400
+         line-height: 27px
+         transition: 0.5s
+         margin-bottom: 6px
+      &:hover 
+         background: $green
+         transition: 0.5s
+         p
+            color: white
+         .svg 
+            path 
+               fill: white
+   &__icon 
+      height: 40px
+      margin-bottom: 20px
+      path
+         fill: rgb(48, 62, 72)
+   &__arr 
+      margin-left: auto
+      display: block
+.footer 
+   background: rgb(48, 62, 72)
+   &__mob 
+      display: none
+   &__bottom 
+      background: rgb(43, 54, 62)
+      padding: 24px 0 26px
+   &__box 
+      justify-content: space-between
+      padding: 65px 0 
+      position: relative
+      &:after 
+         content: ""
+         display: block
+         width: 100%
+         height: 1px
+         background: rgba(255, 255, 255, 0.1)
+         position: absolute
+         top: 104px
+         left: 0
+   &__item 
+      p 
+         color: rgb(255, 255, 255)
+         font-size: 18px
+         font-weight: 600
+         line-height: 21px
+         margin-bottom: 42px
+      ul 
+         li 
+            margin-bottom: 9px
+            &:last-child
+               margin-bottom: 0
+            a 
+               color: rgb(169, 181, 190)
+               font-size: 15px
+               line-height: 140%
+               &:hover 
+                  color: white
+   &__row 
+      align-items: center
+      justify-content: space-between
+   &__com 
+      align-items: center
+      margin-left: 30px
+      p 
+         margin-right: 12px
+         color: rgb(152, 169, 181)
+         font-size: 14px
+         font-weight: 400
+         line-height: 24px
+   
+   .footer__phone
+      margin-right: 43px
+      a 
+          display: flex
+          &:hover 
+            color: $green
+   .nav__tel
+      color: rgb(255, 255, 255)
+      font-size: 14px
+      font-weight: 400
+      line-height: 17px
+      margin-bottom: 10px
+      margin-right: 0
+      &:last-child
+         margin-bottom: 0
+      img 
+         position: relative
+         top: -1px
+   &__logo 
+      margin-right: 37px
+   .nav__call
+      margin-right: 114px
+      &:hover 
+         color: white 
+         .svg 
+            path 
+               fill: white
+   .nav__mail
+      margin-right: 0px
+   .container
+      max-width: 1335px
+.page 
+   .nav 
+      border-bottom: 1px solid rgb(219, 227, 233)
+   .sec  
+      padding: 25px 0 90px
+   h1 
+      font-size: 39px
+      line-height: 50px 
+      margin-bottom: 34px
+      color: rgb(48, 62, 72)
+   .card
+      padding-bottom: 40px
+.project-page 
+   .pop__box
+      margin-bottom: -173px
+   .pop__btn
+      margin-top: 130px
+      margin-bottom: 40px
+   &__info 
+      margin-top: 30px
+      width: 100%
+      max-width: 1300px
+      margin: 30px auto 0
+   &__title 
+      color: rgb(48, 62, 72)
+      font-size: 30px
+      font-weight: 500
+      line-height: 40px
+      margin-bottom: 62px
+   &__row 
+      justify-content: space-between
+      flex-wrap: wrap 
+      margin-bottom: 30px
+   &__item 
+      width: 23.32%
+      margin-bottom: 32px
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      padding: 25px 11px 28px 29px 
+   &__name 
+      color: rgb(48, 62, 72)
+      font-size: 20px
+      font-weight: 500
+      line-height: 24px
+      margin-bottom: 10px
+   &__text 
+      color: rgb(48, 62, 72)
+      font-size: 15px
+      font-weight: 300
+      line-height: 26px
+   &__sub 
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 300
+      line-height: 28px
+.chous 
+   text-align: center
+   cursor: pointer
+   display: flex
+   transition: all 0.18s ease-in-out
+   align-items: center
+   justify-content: center
+   width: 100px
+   height: 100px
+   background: #FFFFFF
+   border: 1px solid #E8E8E8
+   border-radius: 5px
+   padding-top: 24px
+   box-sizing: border-box
+   margin-right: 10px !important
+   p 
+      margin-top: 8px
+      font-weight: 300
+      font-size: 12px
+      line-height: 100%
+.chous:hover 
+   background-position: bottom left
+   background: transparent
+   border: 1px solid #84AAE2
+.my 
+   width: 0.1px
+   height: 0.1px
+   opacity: 0
+   overflow: hidden
+   position: absolute
+.partner 
+   &__box 
+      margin-top: 40px
+      justify-content: space-between
+      align-items: flex-start
+   &__menu 
+      max-width: 380px
+      padding: 34px 40px 43px
+      width: 100%
+      box-sizing: border-box
+      border: 1px solid rgb(219, 227, 233)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      flex: 1 0 auto
+      ul
+         li 
+            margin-bottom: 30px
+            &:last-child
+               margin-bottom: 0
+            a 
+               color: rgb(48, 62, 72)
+               font-size: 18px
+               font-weight: 400
+               line-height: 21px
+               &:hover 
+                  color: $green
+            &.active 
+               a 
+                  color: $green
+   &__content 
+      width: 100%
+      max-width: 65.6%
+      margin-top: -10px
+   .container
+      max-width: 1328px
+   &__text 
+      margin-bottom: 30px
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 300
+      line-height: 28px
+   &__wrap 
+      width: 100%
+      border-radius: 3px
+      margin-top: 50px
+      background: rgb(244, 244, 244)
+      padding: 57px 60px
+   &__form 
+      flex-wrap: wrap
+      justify-content: space-between
+      .dada
+         width: 47.9%
+      label 
+         display: block
+         color: rgb(48, 62, 72)
+         font-size: 17px
+         font-weight: 400
+         line-height: 25px
+         margin-bottom: 11px
+      .chous
+         width: 100%
+         height: 57px
+         box-sizing: border-box
+         border: 1px dashed rgb(43, 176, 98)
+         border-radius: 3px
+         color: rgb(118, 118, 118)
+         font-size: 14px
+         font-weight: 600
+         line-height: 25px
+         display: flex
+         align-items: center
+         justify-content: center
+         margin-bottom: 0
+         padding-top: 0
+         margin-right: 0 !important
+   &__btn 
+      height: 57px
+      width: 47.9%
+      color: rgb(255, 255, 255)
+      font-size: 18px
+      font-weight: 600
+      line-height: 21px
+      text-transform: none
+   &__item 
+      width: 100%
+      margin-bottom: 30px
+      &:nth-child(1), &:nth-child(2)
+         width: 48%
+      input 
+         width: 100%
+         height: 60px
+         border-radius: 3px
+         background: rgb(255, 255, 255)
+         padding-left: 22px
+         color: black
+         font-size: 19px
+         font-weight: 300
+         line-height: 25px
+      textarea
+         width: 100%
+         min-height: 172px
+         max-width: 100%
+         border-radius: 3px
+         background: rgb(255, 255, 255)
+         padding-top: 27px
+         padding-left: 22px
+         color: black
+         font-size: 19px
+         font-weight: 300
+         border: 1px solid rgb(255, 255, 255)
+         line-height: 25px
+         &:focus
+            border: 1px solid $green
+   &__links 
+      width: 100%
+      justify-content: space-between
+   &__bottom 
+      width: 100%
+   &__sub 
+      margin: 30px auto 0 
+      text-align: center
+      color: rgb(52, 43, 64)
+      font-size: 12px
+      font-weight: 300
+      line-height: 18px
+      a 
+         color: rgb(52, 43, 64)
+         text-decoration: underline
+         &:hover 
+            color: $green
+.per 
+   .container
+      max-width: 1328px !important
+.information
+   .partner__box
+      margin-top: 50px
+   .row__box
+      flex-wrap: wrap
+      margin-top: 50px
+   .row__item
+      margin-bottom: 44px
+      height: 233px
+      width: 31%
+   &__sub 
+      color: rgb(48, 62, 72)
+      font-size: 22px
+      font-weight: 400
+      line-height: 26px
+      margin-bottom: 32px
+   &__row 
+      justify-content: flex-start
+      flex-wrap: wrap 
+   &__pf 
+      align-items: center
+      justify-content: center
+      width: 31.76%
+      height: 117px
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      border: 1px solid rgb(244, 244, 244)
+      margin-bottom: 20px
+      margin-right: 20px
+      p 
+         margin-left: 20px
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 400
+         line-height: 26px
+      &:nth-child(3n)
+         margin-right: 0
+      &:hover 
+         border: 1px solid $green
+   &__per 
+      margin-bottom: 40px
+   &__image 
+      width: 100%
+      margin-bottom: 20px
+.information3 
+   .tabs__nav
+      margin-bottom: -25px
+      flex-wrap: wrap
+   .tabs 
+      justify-content: flex-start
+      a 
+         width: max-content
+         height: 41px
+         display: flex
+         justify-content: center
+         align-items: center
+         padding: 0px 20px
+         border: 1px solid rgb(228, 228, 228)
+         border-radius: 3px
+         background: rgb(255, 255, 255)
+         color: rgb(43, 176, 98)
+         font-size: 16px
+         font-weight: 400
+         line-height: 19px
+         margin-right: 20px
+         margin-bottom: 20px
+         &:last-child
+            margin-right: 0
+      .tabs__btn_active 
+         color: white  !important
+         background: $green
+   &__text 
+      margin-bottom: 25px
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 400
+      line-height: 28px
+      a 
+         color: rgb(48, 62, 72)
+         text-decoration: underline
+      span 
+         font-weight: 500
+         display: block
+         line-height: 140%
+   .accordeon 
+      padding: 0
+      margin: 0
+      margin-top: 50px
+      margin-bottom: 30px
+      border-bottom: none
+   .information__pf
+      height: 87px
+      width: 289px
+   .accordeon__item
+      width: 100%
+      height: auto
+      border-radius: 3px
+      background: rgb(249, 249, 249)
+      margin-bottom: 16px
+   .accordeon__button
+      padding: 27px 70px 27px 36px 
+      color: rgb(48, 62, 72)
+      font-size: 24px
+      font-weight: 400
+      line-height: 30px
+      &:hover 
+         color: $green
+      &:after 
+         background: url(/img/1.svg) no-repeat !important
+         right: 26px
+         width: 19px
+         height: 13px
+         top: 36px
+   .panel__text 
+      margin-top: 0
+      padding-left: 36px
+      margin-bottom: 20px
+.information4
+   &__see
+      display: none
+   &__item 
+      margin-top: 47px
+      h3 
+         margin-top: 0
+         margin-bottom: 26px
+         color: rgb(48, 62, 72)
+         font-size: 30px
+         font-weight: 500
+         line-height: 36px
+   &__images 
+      align-items: center
+      flex-wrap: wrap 
+      img 
+         margin-right: 23px
+         margin-bottom: 20px
+         &:last-child
+            margin-right: 0
+   &__open 
+      height: 78px
+      margin-bottom: 40px
+      border-radius: 3px
+      background: rgb(239, 239, 239)
+      width: 100%
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 400
+      border: 1px solid rgb(239, 239, 239)
+      line-height: 28px
+      cursor: pointer
+      .svg 
+         margin-left: 11px
+      &:hover 
+         background: $green
+         color: white 
+         .svg 
+            path 
+               fill: white
+#information6
+   .information3__text span
+      font-weight: 400
+      display: inline
+      text-decoration: underline
+.information6
+   &__row 
+      justify-content: space-between
+      margin-top: 30px
+   &__item 
+      width: 23.62%
+      box-sizing: border-box
+      border: 3px solid rgb(244, 244, 244)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      padding: 24px 18px 31px 23px
+   &__title 
+      font-weight: 700
+      font-size: 24px
+      line-height: 28px
+      margin-bottom: 8px
+   &__name 
+      color: rgb(48, 62, 72)
+      font-size: 16px
+      font-weight: 400
+      line-height: 28px
+      margin-bottom: 13px
+   &__text 
+      color: rgb(48, 62, 72)
+      font-size: 16px
+      font-weight: 300
+      line-height: 26px
+.information7 
+   &__image 
+      width: 100%
+      height: 360px
+      border-radius: 10px
+      overflow: hidden
+      object-fit: cover
+      margin: 20px 0 0px
+   .information3__text span
+      font-size: 20px
+.pt 
+   display: inline !important
+   font-weight: 400 !important
+   text-decoration: underline
+.error 
+   &__box 
+      max-width: 720px 
+      width: 100%
+      margin: 80px auto
+      text-align: center
+      h1 
+         margin-bottom: 25px
+      p 
+         font-size: 20px
+         font-weight: 300
+         line-height: 30px
+         text-align: center
+         margin-bottom: 25px
+   &__btn 
+      margin: 50px auto 0
+      width: 311px
+      height: 57px
+      font-size: 18px
+      text-transform: none
+.services 
+   .row__box 
+      flex-wrap: wrap 
+   .row__arr
+      margin-top: auto
+   .row__item 
+      width: 25%
+      margin-bottom: 0 !important
+      display: flex
+      flex-direction: column 
+      align-items: flex-start
+      height: 377px
+      border-right: none
+      p 
+         font-size: 14px
+         width: 100%
+         max-width: 214px
+         font-weight: 300
+         line-height: 24px
+      &:last-child
+         border-right: 1px solid #e4e4e4
+         width: 100%
+         border-top: none
+         height: 252px
+         p 
+            max-width: 492px
+      &:nth-child(4), &:nth-child(8)
+         border-right: 1px solid #e4e4e4
+      .services__name 
+         font-size: 20px
+         font-weight: 400
+         max-width: 100%
+         line-height: 24px
+         margin-bottom: 10px
+.services-item 
+   &__block 
+      width: 100%
+      box-sizing: border-box
+      border: 1px solid rgb(219, 227, 233)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      padding: 32px 46px 50px 40px 
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 300
+         line-height: 28px
+         margin-bottom: 25px
+   &__btn 
+      width: 298px
+      height: 60px
+      text-transform: none
+      font-size: 18px
+   &__pic 
+      width: 100%
+      height: 315px
+      overflow: hidden
+      border-radius: 3px
+      object-fit: cover 
+      margin: 50px 0 44px
+   &__text 
+      color: rgb(48, 62, 72)
+      font-size: 16px
+      font-weight: 300
+      line-height: 28px
+      margin-bottom: 25px
+   h2 
+      color: rgb(48, 62, 72)
+      font-size: 40px
+      font-weight: 500
+      line-height: 47px
+      margin: 40px 0 -10px
+.contacts 
+   .tabs, .tabs2
+      justify-content: flex-start
+      .tabs__nav
+         a 
+            width: max-content
+            height: 55px
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 0px 29px
+            border: 1px solid rgb(228, 228, 228)
+            border-radius: 3px
+            background: rgb(255, 255, 255)
+            color: rgb(43, 176, 98)
+            font-size: 20px
+            font-weight: 400
+            line-height: 24px
+            margin-right: 20px
+            margin-bottom: 20px
+            &:last-child
+               margin-right: 0
+         .tabs__btn_active 
+            color: white  !important
+            background: $green
+   .tabs2
+      .tabs__nav
+         flex-wrap: wrap
+         a 
+            margin-right: 17px
+            font-size: 18px
+   &__sub 
+      color: rgb(48, 62, 72)
+      margin-bottom: 40px
+      font-size: 18px
+      font-weight: 300
+      line-height: 28px
+   #map, #map2 
+      width: 100%
+      height: 565px
+      margin: 40px 0 60px
+   &__row 
+      margin: 60px 0 40px 
+      justify-content: space-between
+   &__block 
+      padding: 27px 25px 36px
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      width: 31.21%
+      flex-direction: column 
+      align-items: flex-start
+      span 
+         color: rgb(48, 62, 72)
+         font-size: 20px
+         font-weight: 600
+         line-height: 28px
+         display: block
+         margin-bottom: 7px
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 18px
+         font-weight: 300
+         line-height: 28px
+   &__name 
+      color: rgb(48, 62, 72)
+      font-size: 20px
+      font-weight: 600
+      line-height: 28px
+      margin-bottom: 30px
+   &__flex 
+      justify-content: space-between
+      flex-wrap: wrap 
+      margin-bottom: 40px
+   &__item 
+      width: 32.2%
+      height: 136px
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      margin-bottom: 27px
+      padding: 40px 34px
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 18px
+         font-weight: 300
+         line-height: 28px
+   &__wrap 
+      width: 100%
+      padding: 38px 22px 31px 35px 
+      box-sizing: border-box
+      border: 1px solid rgb(222, 222, 222)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+   &__line 
+      justify-content: space-between
+      align-items: flex-end
+   &__btn 
+      width: 344px
+      height: 60px
+      font-size: 18px
+      text-transform: none
+   &__el 
+      width: 100%
+      max-width: 678px
+      align-items: center
+      padding: 1px 0
+      border-bottom: 1px dashed rgb(220, 220, 220)
+      &:last-child
+         border-bottom: none
+      p 
+         &:first-child
+            color: rgb(48, 62, 72)
+            font-size: 18px
+            font-weight: 300
+            line-height: 40px
+            min-width: 200px 
+            margin-right: 80px
+         &:nth-child(2)
+            color: rgb(48, 62, 72)
+            font-size: 18px
+            font-weight: 400
+            line-height: 40px
+[class*="ymaps-"][class*="-ground-pane"] 
+   filter: grayscale(100)
+.news 
+   &__box 
+      justify-content: flex-start
+      flex-wrap: wrap 
+      margin-top: 40px
+   &__nav 
+      margin: 60px auto 20px 
+      justify-content: center
+      align-items: center
+      li 
+         display: flex
+         align-items: center
+         justify-content: center
+         border-radius: 3px
+         overflow: hidden 
+         width: 41px
+         height: 37px
+         background: rgb(244, 244, 244)
+         margin-right: 10px
+         a 
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 100%
+            height: 100%
+            background: rgb(244, 244, 244)
+            color: rgb(48, 62, 72)
+            font-size: 14px
+            font-weight: 400
+            line-height: 17px
+         &:last-child
+            margin-right: 0
+         &:hover 
+            a
+               color: $green
+         &.active 
+            a 
+               background: $green !important
+               color: white !important
+   &__item 
+      width: 23.26%
+      margin: 0 30px 30px 0
+      height: 384px
+      border-radius: 10px
+      background: rgb(244, 244, 244)
+      padding: 15px 15px 20px
+      border: 1px solid rgb(244, 244, 244)
+      &:hover 
+         border: 1px solid $green
+         .svg 
+            path 
+               fill: $green
+      &:nth-child(4n)
+         margin-right: 0
+      img 
+         width: 100%
+         object-fit: cover 
+         overflow: hidden
+         height: 169.58px
+         border-radius: 10px
+         margin-bottom: 15px
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 18px
+         font-weight: 400
+         line-height: 26px
+         min-height: 52px
+         margin-bottom: 15px
+   &__info 
+      align-items: center
+      margin-bottom: 23px
+      width: 100%
+      justify-content: space-between
+      span 
+         color: rgb(48, 62, 72)
+         font-size: 12px
+         font-weight: 400
+         line-height: 14px
+   &__tags 
+      flex-wrap: wrap 
+      div
+         display: flex
+         align-items: center
+         justify-content: center
+         margin-bottom: 5px
+         margin-right: 5px
+         width: max-content
+         height: 26px
+         padding: 0 8px
+         border-radius: 3px
+         background: rgb(255, 255, 255)
+         color: rgb(169, 181, 190)
+         font-size: 12px
+         font-weight: 400
+         line-height: 14px
+.articles 
+   .news__item 
+      display: flex
+      flex-direction: column 
+      align-items: flex-start
+      width: 48.8%
+      padding: 29px
+      height: auto
+      &:nth-child(2n)
+         margin-right: 0
+      &:nth-child(4n)
+         margin-right: 0
+   &__top 
+      margin-bottom: 22px
+      align-items: center
+      img 
+         margin-right: 34px
+         width: 195.94px
+         flex: 1 0 auto 
+         max-width: 196px
+         height: 151.11px
+         margin-bottom: 0
+         border-radius: 10px
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 18px
+         font-weight: 400
+         margin-bottom: 0
+         line-height: 26px
+   &__text 
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 15px
+         font-weight: 300
+         line-height: 26px
+         margin-bottom: 18px
+   &__info 
+      align-items: center
+   &__ava 
+      align-items: center
+      margin-right: 28px
+      img 
+         border-radius: 50% 
+         object-fit: contain 
+         width: 25px
+         margin-bottom: 0 !important
+         height: 25px
+         margin-right: 10px
+      p 
+         color: rgb(119, 119, 119)
+         font-size: 14px
+         font-weight: 400
+         line-height: 17px
+         min-height: inherit !important
+         margin-bottom: 0
+   .news__info
+      margin-top: auto
+.area 
+   &__pic 
+      width: 100%
+      overflow: hidden
+      object-fit: cover 
+      height: 300px
+      border-radius: 20px
+      margin-bottom: 30px
+   &__box 
+      width: 100%
+      border: 5px solid rgb(244, 244, 244)
+      border-radius: 20px
+      background: rgb(255, 255, 255)
+      padding: 32px 99px 35px
+      margin: 40px 0
+.area3 
+   &__box 
+      .information__pf
+         padding: 0 35px 
+         width: max-content
+         height: 103px
+         margin: 25px 0
+         p 
+            font-size: 18px
+            line-height: 26px
+   &__name 
+      color: rgb(48, 62, 72)
+      font-size: 23.5px
+      font-weight: 500
+      line-height: 28px
+      margin-bottom: 20px
+   &__item 
+      width: 100%
+      box-sizing: border-box;
+      border: 5px solid rgb(244, 244, 244)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      padding: 37px 38px 20px 44px
+      margin-bottom: 30px
+   &__top 
+      align-items: flex-start
+   &__block 
+      align-items: center
+      margin-right: 40px
+      justify-content: center
+      flex: 1 0 auto 
+      max-width: 232px
+      width: 232px
+      height: 190px
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      img 
+         mix-blend-mode: darken
+         object-fit: contain
+   &__text 
+      color: rgb(48, 62, 72)
+      font-size: 15px
+      font-weight: 300
+      line-height: 25px
+      margin-bottom: 25px
+      &:last-child
+         margin-bottom: 0
+   &__title 
+      color: rgb(48, 62, 72)
+      font-size: 20px
+      font-weight: 500
+      line-height: 24px
+      margin-bottom: 11px
+.area4 
+   &__row 
+      margin-top: 40px
+      justify-content: space-between
+      flex-wrap: wrap
+      a 
+         padding: 30px 32px 
+         display: flex
+         width: 33.3%
+         border: 1px solid rgb(219, 227, 233)
+         border-top: none
+         align-items: center
+         justify-content: center
+         height: 372px
+         img 
+            width: 100%
+            height: 100%
+            object-fit: contain
+         &:nth-child(1), &:nth-of-type(2), &:nth-child(3)
+            border-top: 1px solid rgb(219, 227, 233)
+.area.information3 
+   .accordeon__item
+      box-sizing: border-box
+      border: 5px solid rgb(244, 244, 244)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      .panel__text
+         margin-top: 25px
+         margin-bottom: 0
+         display: flex
+         justify-content: flex-start
+         flex-wrap: wrap 
+         max-width: 100%
+         a 
+            display: flex
+            align-items: center
+            margin-right: 20px
+            justify-content: center
+            width: 30.2%
+            height: 327px
+            padding: 10px
+            margin-bottom: 30px
+            border-radius: 3px
+            background: rgb(244, 244, 244)
+            img 
+               width: 100%
+               height: 100%
+               object-fit: contain
+   .accordeon__button
+      &:after 
+         top: 50%
+         margin-top: -6.5px
+.sales-item 
+   &__top 
+      margin-top: 40px
+      align-items: flex-start
+      h1 
+         margin-bottom: 0
+         position: relative
+         top: -2px
+         width: 100%
+         max-width: 680px
+   &__link 
+      width: 135px
+      height: 52px
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      color: rgb(48, 62, 72)
+      font-size: 16px
+      text-transform: none
+      font-weight: 500
+      border: 1px solid rgb(244, 244, 244)
+      &_prev 
+         margin-right: 34px
+         .svg 
+            margin-right: 17px
+            margin-left: 0
+      &_next 
+         width: 253px
+         margin-left: auto
+         .svg 
+            margin-left: 33px
+      &:hover 
+         background: $green
+         color: white 
+         .svg 
+            path 
+               fill: white
+   &__box 
+      justify-content: space-between
+      margin-top: 40px
+      align-items: flex-start
+      img 
+         object-fit: cover 
+         width: 547px
+         height: 464px
+         border-radius: 3px
+         overflow: hidden
+   &__content 
+      width: 100%
+      max-width: 55.8%
+      margin-right: 30px
+      box-sizing: border-box;
+      border: 1px solid rgb(219, 227, 233)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      padding: 32px 47px 38px 33px
+   &__text 
+      color: rgb(48, 62, 72)
+      font-size: 16px
+      font-weight: 300
+      line-height: 28px
+      margin-bottom: 32px
+   &__block 
+      width: 100%
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      padding: 25px 33px 37px 35px
+      align-items: flex-end
+   &__btn 
+      width: 262px
+      height: 60px
+      border-radius: 5px
+      background: rgb(43, 176, 98)
+      font-size: 18px
+      text-transform: none
+   &__sub 
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 400
+      line-height: 28px
+      margin-bottom: 16px
+   &__flex 
+      width: 100%
+      align-items: flex-end
+      justify-content: space-between
+   #countdown
+      ul 
+         display: flex
+         align-items: flex-start
+         li 
+            margin-right: 49px
+            position: relative
+            text-align: center
+            &:last-child
+               margin-right: 0
+            span 
+               display: block
+               color: rgb(48, 62, 72)
+               font-size: 14px
+               font-weight: 400
+               line-height: 17px
+               margin-top: 7px
+            #minutes, #hours, #days
+               color: rgb(48, 62, 72)
+               font-size: 40px
+               display: block
+               margin-bottom: 7px
+               font-weight: 700
+               line-height: 28px
+            &:after 
+               display: block
+               content: ":"
+               position: absolute
+               right: -28px
+               top: 18px
+               color: rgb(48, 62, 72)
+               font-size: 20px
+               font-weight: 400
+               line-height: 21px
+            &:last-child
+               &::after
+                  display: none
+.other 
+   background: transparent
+   padding-bottom: 100px !important
+   h2 
+      margin-bottom: 49px
+      color: rgb(48, 62, 72)
+      font-size: 30px
+      font-weight: 500
+      line-height: 36px
+   &__item
+      margin-right: 5px
+      margin-bottom: 5px
+      &:last-child
+         margin-right: 0
+   .swiper23 
+      overflow: hidden
+      .swiper-slide
+         box-sizing: border-box
+         border: 1px solid rgb(219, 227, 233)
+         border-radius: 3px
+         background: rgb(255, 255, 255)
+         padding: 40px 20px 18px
+   .swiper-button-prev23
+      width: 44px
+      border: 2px solid rgba(0, 0, 0, 0.1)
+      height: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      padding-left: 2px
+      margin-right: 10px
+      border-radius: 50%
+      cursor: pointer
+   .swiper-button-next23
+      width: 44px
+      height: 44px
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      cursor: pointer
+   .header__arrows
+      width: inherit !important
+      justify-content: flex-start !important
+      right: 0 !important
+      padding: 0  !important
+      bottom: inherit  !important
+      top: 0 !important
+      position: absolute
+   .autoplay-progress3
+      left: inherit
+      right: 0px
+      z-index: -1
+      svg
+         stroke: $green
+   &__top 
+      position: relative
+   .container
+      max-width: 1328px
+   &__pic 
+      margin: 0 auto 30px 
+      display: block
+      text-align: center
+   .card__colors
+      flex-wrap: wrap 
+      margin-bottom: 22px
+   &__name 
+      margin-bottom: 8px
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 400
+      line-height: 21px
+   &__sum 
+      color: rgb(48, 62, 72)
+      font-size: 20px
+      font-weight: 500
+      line-height: 24px
+      margin-bottom: 20px
+   &__links 
+      margin-bottom: 15px
+      align-items: flex-start
+   &__btn 
+      width: 177.12px
+      height: 45.52px
+      border-radius: 3px
+      background: rgb(207, 239, 220)
+      margin-right: 12px
+      border: 1px solid rgb(207, 239, 220)
+      color: rgb(43, 176, 98)
+      font-size: 16px
+      font-weight: 400
+      line-height: 19px
+      text-transform: uppercase
+      &:hover 
+         background: $green
+         color: white
+   &__like 
+      align-items: center
+      justify-content: center
+      width: 45.52px
+      height: 45.52px
+      box-sizing: border-box
+      border: 1px solid rgb(219, 222, 225)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      &:hover 
+         .svg 
+            path 
+               fill: red
+   &__tags
+      flex-wrap: wrap 
+      a 
+         display: flex
+         align-items: center
+         justify-content: center
+         width: max-content
+         height: 23.17px
+         border-radius: 3px
+         background: rgb(234, 241, 237)
+         padding: 0 10px
+         color: rgb(48, 62, 72)
+         font-size: 14px
+         font-weight: 400
+         line-height: 17px
+         margin-right: 8px
+         margin-bottom: 5px
+         &:hover 
+            background: $green
+            color: white
+.header-about
+   .header__wrap
+      position: relative
+      padding: 223px 0 220px
+      &:after 
+         content: ""
+         background: rgba(48, 62, 72, 0.3)
+         display: block
+         position: absolute
+         top: 0
+         left: 0
+         width: 100%
+         height: 100%
+         z-index: -1
+   .header__box 
+      height: auto !important
+      h1 
+         margin-bottom: 22px
+         text-align: center
+      p 
+         color: rgb(255, 255, 255)
+         width: 100%
+         max-width: 912px 
+         margin: 0 auto
+         font-size: 20px
+         font-weight: 400
+         line-height: 30px
+         text-align: center
+   &__bg 
+      position: absolute
+      width: 100%
+      height: 100%
+      z-index: -1
+      object-fit: cover 
+      left: 0
+      top: 0
+.about 
+   padding: 92px 0 113px 
+   h2 
+      text-align: center
+      margin-bottom: 60px
+   &__row 
+      justify-content: space-between
+      margin-bottom: 80px
+   &__el 
+      height: 184.89px
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      width: 19.27%
+      padding: 40px 35px 
+      text-align: center
+   &__one 
+      color: rgb(43, 176, 98)
+      font-size: 40px
+      font-weight: 600
+      margin-bottom: 7px
+      line-height: 47px
+      span 
+         font-weight: 400
+   &__two 
+      color: rgb(48, 62, 72)
+      font-size: 16px
+      font-weight: 400
+      line-height: 19px
+      text-align: center
+   &__area 
+      justify-content: space-between
+      margin-bottom: 100px
+   &__item 
+      align-items: center
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 300
+         line-height: 26px
+         margin-left: 19px
+   &__line 
+      justify-content: space-between
+   &__block 
+      padding: 43px 27px 30px 60px
+      width: 48.4%
+      transition: 0.5s 
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 20px
+         font-weight: 400
+         line-height: 30px
+         transition: 0.5s 
+         width: 100%
+         max-width: 507px
+         margin-bottom: 10px
+      &:hover 
+         background: $green
+         p 
+            color: white 
+         a 
+            opacity: 1
+      
+   &__more 
+      margin-left: auto
+      text-transform: none
+      width: 170px
+      opacity: 0
+      height: 56px
+      border-radius: 5px
+      background: rgb(255, 255, 255)
+      border: 1px solid rgb(255, 255, 255)
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 500
+      &:hover 
+         color: white
+.about-ser 
+   padding: 87px 0 75px
+   background: rgb(250, 250, 250)
+   h2 
+      text-align: center
+   &__box 
+      justify-content: space-between
+      flex-wrap: wrap
+      margin-top: 60px
+   &__item 
+      width: 22.35%
+      margin-bottom: 47px
+      overflow: hidden
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      padding: 20px
+      img 
+         width: 100%
+         height: 180.66px
+         border-radius: 3px
+         margin-bottom: 17px
+         overflow: hidden
+         object-fit: cover
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 400
+         line-height: 26px
+         text-align: center
+.about-main
+   padding-top: 87px
+   &__row 
+      margin: 64px 0 100px 
+      justify-content: space-between
+   &__item 
+      width: 32%
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      overflow: hidden
+      padding: 52px 26px 46px 
+      text-align: center
+      img 
+         display: block
+         margin: 0 auto 26px 
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 18px
+         font-weight: 400
+         line-height: 26px
+         text-align: center
+   &__box 
+      h2 
+         text-align: center
+         margin-bottom: 80px
+   &__wrap 
+      flex-direction: column 
+      margin-bottom: 110px
+      align-items: flex-start
+      &:nth-child(2n)
+         .about-main__flex
+            img 
+               order: 1
+            .about-main__content
+               order: 2
+   &__flex 
+      justify-content: space-between
+      align-items: flex-start
+      margin-bottom: 60px
+      img 
+         object-fit: cover 
+         width: 47.16%
+         height: 489px
+         border-radius: 3px
+         overflow: hidden
+   &__content 
+      margin-top: 60px
+      width: 100%
+      max-width: 47.23% 
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 18px
+         font-weight: 300
+         line-height: 28px
+      h3 
+         margin-top: 0
+         margin-bottom: 25px
+         color: rgb(48, 62, 72)
+         font-size: 36px
+         font-weight: 300
+         line-height: 46px
+   .see 
+      display: none
+      p
+         color: rgb(48, 62, 72)
+         font-size: 18px
+         font-weight: 300
+         line-height: 28px
+   .op 
+      width: 100%
+      justify-content: center
+      height: 86px
+      border-radius: 3px
+      background: rgb(207, 239, 220)
+      color: rgb(43, 176, 98)
+      font-size: 24px
+      font-weight: 400
+      line-height: 28px
+      text-transform: none
+      align-items: center
+      cursor: pointer
+      transition: 0.5s 
+      .svg
+         margin-left: 30px
+      &:hover 
+         background: $green
+         color: white 
+         .svg 
+            path 
+               fill: white
+.project-item
+   &__box 
+      justify-content: space-between
+      margin-top: 60px
+      position: relative
+   &__right 
+      width: 100%
+      max-width: 39.3% 
+      box-sizing: border-box
+      border: 1px solid rgb(219, 227, 233)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      padding: 23px 27px 32px
+   &__left 
+      width: 100%
+      max-width: 57.65%
+      position: relative
+      .swiper-button-prev9
+         width: 44px
+         border: 2px solid rgba(0, 0, 0, 0.1)
+         height: 44px
+         display: flex
+         align-items: center
+         justify-content: center
+         padding-left: 2px
+         margin-right: 10px
+         border-radius: 50%
+         cursor: pointer
+      .swiper-button-next9
+         width: 44px
+         height: 44px
+         display: flex
+         align-items: center
+         justify-content: center
+         border-radius: 50%
+         cursor: pointer
+      .header__arrows
+         width: inherit !important
+         justify-content: flex-end !important
+         padding: 0  !important
+         left: inherit !important
+         right: 85px
+         bottom: 60px  !important
+         position: absolute
+      .autoplay-progress3
+         left: inherit
+         right: 0px
+         border: 2px solid rgb(233, 233, 233)
+         z-index: -1
+         svg
+            stroke: $green
+   &__name 
+      color: rgb(48, 62, 72)
+      font-size: 24px
+      font-weight: 500
+      line-height: 40px
+      margin-bottom: 20px
+   &__btn
+      padding: 0 24px 
+      width: max-content
+      height: 55px
+      border-radius: 3px
+      background: rgb(245, 245, 245)
+      border: 1px solid rgb(245, 245, 245)
+      text-transform: none
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 300
+      line-height: 28px
+      margin-bottom: 24px
+      &:hover 
+         border: 1px solid $green
+         background: $green
+         color: white
+   &__text 
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 300
+      margin-bottom: 20px
+      line-height: 28px
+   &__info 
+      padding-top: 20px
+      border-top: 1px solid rgb(219, 227, 233)
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 18px
+         font-weight: 400
+         line-height: 28px
+         margin-bottom: 8px
+   &__links 
+      flex-wrap: wrap 
+      margin-bottom: 19px
+      a 
+         color: rgb(43, 176, 98)
+         font-size: 18px
+         font-weight: 300
+         line-height: 28px
+         margin-right: 20px
+         margin-bottom: 5px
+         &:hover 
+            color: #000
+   &__button 
+      width: 340px
+      height: 60px
+      border-radius: 5px
+      text-transform: none
+      font-size: 18px
+      font-weight: 500
+   .swiper90 
+      width: 100%
+      overflow: hidden
+      height: 648px
+      margin-bottom: 30px
+      .swiper-slide
+         width: 100%
+         height: 100%
+         overflow: hidden
+         border-radius: 3px
+         img 
+            width: 100%
+            height: 100%
+            object-fit: cover 
+   .swiper9 
+      width: 100%
+      max-width: 69%
+      overflow: hidden
+      height: 84px
+      .swiper-slide
+         border: 2px solid transparent
+         width: 100%
+         height: 100%
+         overflow: hidden
+         box-sizing: border-box
+         border-radius: 3px
+         img 
+            width: 100%
+            height: 100%
+            object-fit: cover 
+      .swiper-slide-thumb-active 
+         border: 2px solid rgb(43, 176, 98)
+.card
+   &__top 
+      margin-top: 40px
+      align-items: flex-end
+      justify-content: space-between
+      h1 
+         width: 100%
+         max-width: 52%
+         margin-bottom: 0
+         font-size: 36px
+   &__links 
+      a 
+         height: 50px
+         font-size: 15px
+         font-weight: 500
+         line-height: 18px
+         margin-left: 18px
+         &:first-child
+            margin-left: 0
+   &__like 
+      width: 158px
+      text-transform: none
+      color: rgb(48, 62, 72)
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      border: 1px solid rgb(244, 244, 244)
+      .svg 
+         margin-right: 16px
+         margin-left: 0 !important
+      &:hover 
+         color: white
+         background: $green
+         .svg 
+            path 
+               fill: white
+   &__btn 
+      width: 167.36px
+      text-align: center
+      font-size: 15px
+      font-weight: 500
+      text-transform: none
+      line-height: 18px
+   .project-item__box
+      margin-top: 40px
+   .project-item__left
+      max-width: 55.9% 
+   .swiper91
+      width: 100%
+      overflow: hidden
+      height: 589px
+      margin-bottom: 0px
+      .swiper-slide
+         width: 100%
+         height: 100%
+         overflow: hidden
+         border-radius: 3px
+         background: rgb(244, 244, 244)
+         padding: 80px
+         img 
+            width: 100%
+            mix-blend-mode: darken
+            height: 100%
+            object-fit: contain
+   .swiper92 
+      width: 100%
+      max-width: 84px
+      overflow: hidden
+      height: auto
+      position: absolute
+      top: 12px
+      max-height: 235px
+      left: 15px
+      padding-bottom: 13px
+      .swiper-slide
+         border: 1px solid transparent
+         overflow: visible
+         cursor: pointer
+         border-radius: 3px
+         height: 108.93px
+         max-width: 84px
+         display: flex
+         align-items: center
+         justify-content: center 
+         padding: 10px
+         flex: 1 0 auto 
+         box-sizing: border-box
+         border-radius: 3px
+         background: rgb(255, 255, 255)
+         margin-bottom: 13px
+         img 
+            width: 100%
+            mix-blend-mode: darken
+            z-index: -1
+            height: 100%
+            object-fit: contain
+      .swiper-slide-thumb-active 
+         border: 1px solid rgb(43, 176, 98)
+      .swiper-wrapper
+         flex-direction: column
+   &__colors
+      flex-wrap: wrap
+      .custom-checkbox 
+         position: absolute
+         z-index: -1
+         opacity: 0
+      .calc__item
+         margin-right: 15px
+         &:last-child
+            margin-right: 0
+      .custom-checkbox+label 
+         display: flex
+         align-items: center
+         user-select: none
+         cursor: pointer
+         justify-content: center
+         background-color: transparent
+         width: 30px
+         height: 30px
+         position: relative
+         border: 1px solid rgb(220, 220, 220)
+         padding: 5px
+         border-radius: 100px
+         box-sizing: border-box
+         &:last-child
+            margin-right: 0
+         &:before 
+            position: absolute
+            box-sizing: border-box
+            opacity: 0
+         img 
+            width: 100%
+            margin: 0 !important
+            object-fit: inherit
+            height: 100%
+      .custom-checkbox:checked + label
+         border: 1px solid rgb(81, 62, 33)
+         box-sizing: border-box
+         background: transparent !important
+      .custom-checkbox:checked+label
+         background: $green
+   .project-item__right
+      padding: 32px 45px 35px
+      max-width: 40.3%
+      .custom-checkbox+label 
+         width: 35px
+         height: 35px
+      .other__item
+         margin-right: 12px
+         margin-bottom: 10px
+   &__line
+      padding-bottom: 18px
+      margin-bottom: 24px
+      border-bottom: 1px solid rgb(222, 222, 222);
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 24px
+         font-weight: 400
+         line-height: 28px
+         margin-right: 45px
+         &:last-child
+            margin-right: 0
+   &__item 
+      margin-bottom: 22px
+      p 
+         margin-bottom: 13px
+         color: rgb(48, 62, 72)
+         font-size: 14px
+         font-weight: 400
+         line-height: 17px
+   &__select 
+      width: 100%
+      margin-bottom: 22px
+      &_1 
+         position: relative
+         z-index: 3
+      &_2 
+         position: relative
+         z-index: 2
+   .card__colors
+      margin-bottom: 23px
+   .selectCF .searchCF input
+      display: none !important
+   .selectCF
+      width: 100%
+      box-sizing: border-box
+      height: 49px
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+   .selectCF .titleCF
+      box-sizing: border-box
+      padding: 15px 22px 
+      color: rgb(48, 62, 72) !important
+      font-size: 16px
+      font-weight: 400
+      line-height: 19px
+   .selectCF .arrowCF
+      background: url(/img/vec.svg) no-repeat !important
+      right: 16px
+      top: 21px
+      width: 13px
+      height: 13px
+   .onCF .arrowCF
+      top: 15px
+   .onCF li ul
+      top: 57px
+      padding-top: 8px
+      border-radius: 3px
+      left: 0
+   &__flex 
+      align-items: flex-start
+      margin-bottom: 24px
+   &__content 
+      margin-top: 66px
+   .tabs__nav
+      margin-bottom: 39px
+      padding-bottom: 30px
+      border-bottom: 4px solid rgb(244, 244, 244)
+   .tabs__btn
+      margin-right: 70px   
+      color: rgb(48, 62, 72)
+      font-size: 20px
+      font-weight: 500
+      line-height: 120%
+      position: relative
+      &:last-child
+         margin-right: 0
+      &:hover 
+         color: $green
+      &_active 
+         color: $green !important
+         &:after 
+            content: ""
+            display: block
+            position: absolute
+            bottom: -34px
+            left: 0
+            background: $green
+            width: 105%
+            height: 4px
+   .tabs__pane
+      p 
+         margin-bottom: 20px
+         color: rgb(48, 62, 72)
+         font-size: 18px
+         font-weight: 300
+         line-height: 28px
+         span 
+            font-weight: 500
+   .tabs 
+      border-bottom: 4px solid rgb(244, 244, 244)
+      padding-bottom: 60px
+   &__el 
+      height: auto
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 14px
+         font-weight: 400
+         line-height: 17px
+         margin-bottom: 8px
+      &:nth-child(2), &:nth-child(3)
+         width: 110px
+         input 
+            width: 100%
+            height: 49px
+            border-radius: 3px
+            background: rgb(244, 244, 244)
+            padding-left: 22px
+            border: none
+            color: rgb(48, 62, 72)
+            font-size: 16px
+            font-weight: 400
+   &__flex 
+      justify-content: space-between
+   #incdec
+      width: 144px
+      border-radius: 3px
+      background: rgb(244, 244, 244)
+      display: flex
+      align-items: center
+      height: 49px
+      max-width: 144px
+      padding-left: 16px
+      padding-top: 3px
+      input 
+         background: transparent
+         width: 100%
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 400
+         border: none
+         max-width: 72px 
+         text-align: center
+   #down
+      position: relative
+      top: -5px
+      right: 4px
+      cursor: pointer
+   #up
+      cursor: pointer
+   &__sum 
+      margin: 24px 0 21px
+      color: rgb(48, 62, 72)
+      font-size: 20px
+      font-weight: 400
+      line-height: 24px
+   &__buttons 
+      a 
+         border-radius: 5px
+         width: 204px
+         font-size: 16px
+         font-weight: 500
+         line-height: 19px
+         text-transform: none
+         height: 50px
+         &:first-child
+            margin-right: 20px
+         &:nth-child(2)
+            background: rgb(200, 255, 223)
+            border: 2px solid rgb(200, 255, 223)
+            color: rgb(43, 176, 98)
+            &:hover 
+               background: transparent
+.range_container 
+   display: flex
+   flex-direction: column
+   width: 100%
+.sliders_control 
+   position: relative
+   min-height: auto
+.form_control 
+   position: relative
+   display: flex
+   justify-content: space-between
+   font-size: 24px
+   color: #635a5a
+   margin-top: 30px
+   span
+      display: flex
+      align-items: center
+   input[type="number"]
+      color: #1b1b1b
+      width: auto
+      height: auto
+      font-size: 14px
+      border: none
+      background: transparent
+      position: absolute
+      top: 7px
+      right: 3px
+      left: inherit
+   &_container 
+      position: relative
+      display: flex
+      width: 100%
+      align-items: center
+      width: 273px
+      height: 31px
+      border-radius: 5px
+      background-color: #f3f3f3
+      justify-content: flex-start
+      padding-left: 14px
+      &__time
+         color: #a8a8a8
+         font-size: 14px
+         margin-right: 16px
+#fromSlider2, #fromSlider3, #fromSlider4, #fromSlider, #fromSlider5, #fromSlider6
+   z-index: 30 !important
+input[type=range]::-webkit-slider-thumb
+   -webkit-appearance: none
+   pointer-events: all
+   width: 30px
+   height: 36px
+   background: url(/img/range.svg) no-repeat center 0px  !important
+   cursor: pointer
+   border: none
+   box-shadow: none !important
+   top: 0px
+   z-index: 20 !important
+   position: relative
+input[type=range]:nth-child(2)::-webkit-slider-thumb
+   background: url(/img/range.svg) no-repeat center 0px  !important
+   position: relative
+   top: 0px
+   height: 40px
+   z-index: 20 !important
+   width: 30px
+   border-radius: 50%
+input[type=range]::-moz-range-thumb 
+   -webkit-appearance: none
+   pointer-events: all
+   z-index: 20 !important
+   width: 30px
+   height: 36px
+   background: url(/img/range.svg) no-repeat center  0px !important
+   cursor: pointer
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button 
+   -webkit-appearance: none
+   appearance: none
+   margin: 0
+   opacity: 0
+input[type="range"] 
+   -webkit-appearance: none
+   appearance: none
+   height: 4px
+   width: 100%
+   border-radius: 4px
+   display: flex
+   align-items: center
+   position: absolute
+   background-color: #E8E8E8
+   pointer-events: none
+   border: none
+   top: inherit
+   z-index: 2 !important
+   bottom: inherit
+   top: 8px
+   &:hover, &:focus 
+      border: none !important
+#fromSlider, #fromSlider2, #fromSlider3, #fromSlider4, #fromSlider5, #fromSlider6
+   height: 0
+   z-index: 1
+#event-change
+   padding: 20px 0
+   position: absolute
+   color: transparent
+   z-index: -1
+   opacity: 0
+.catalog 
+   padding: 34px 0 100px
+   h1 
+      margin-bottom: 50px
+      width: 100%
+      max-width: 775px
+   .form_control
+      margin-top: 5px
+   .form_control input[type="number"] 
+      width: 100%
+      height: 22px
+      color: #001a34
+      font-size: 16px
+      line-height: 130%
+      border: none
+      background: transparent
+      position: absolute
+      top: 50%
+      z-index: 5
+      right: inherit
+      margin-top: -11px
+      left: 0
+      text-align: center
+      &:focus 
+         border: none
+   .form_control_container__time
+      color: rgb(112, 127, 141)
+      font-size: 14px
+      font-weight: 400
+      line-height: 18.06px
+      margin-right: 10px
+   .form_control_container
+      z-index: 1
+      box-sizing: border-box
+      width: 122px
+      height: 40px
+      border-radius: 5px
+      background: rgb(234, 241, 237)
+   &__el 
+      position: relative
+      .custom-checkbox + label::before, .custom-checkbox + label + label::before
+         width: 22px
+         height: 22px
+         box-sizing: border-box
+         border: 1px solid rgb(234, 234, 234)
+         background: rgb(255, 255, 255)
+         border-radius: 3px
+         margin-right: 14px
+         max-width: 22px
+      .custom-checkbox + label, .custom-checkbox + label + label
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 300
+         &:hover 
+            &:before 
+               border: 2px solid $green
+      .calc__item
+         margin-bottom: 8px
+      .custom-checkbox:checked + label::before, .custom-checkbox:checked + label + label::before
+         background: url(/img/check.svg) no-repeat center center
+         background-color: $green
+         border: 2px solid $green
+      .accordeon__button4,  .accordeon__button, .accordeon__button2, .accordeon__button5, .accordeon__button3, .accordeon__button6, .accordeon__button7, .accordeon__button8, .accordeon__button9
+         bottom: 0
+         left: 0
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 500
+         line-height: 19px
+         padding-bottom: 23px
+      .accordeon, .accordeon2, .accordeon3, .accordeon4, .accordeon5, .accordeon6, .accordeon7, .accordeon8, .accordeon9
+         padding: 0
+         margin: 0
+         border: none
+         padding-bottom: 20px
+         border-bottom: 1px solid rgb(231, 231, 231)
+   &__top 
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 27px
+   &__info 
+      flex: 1 0 auto 
+      width: 100%
+      max-width: 349px
+      margin-right: 44px
+      box-sizing: border-box
+      border: 1px solid rgb(219, 227, 233)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      padding: 32px 32px 38px
+   &__items 
+      width: 100%
+      max-width: 100%
+   &__title 
+      color: rgb(16, 25, 32)
+      font-size: 35px
+      font-weight: 600
+      line-height: 130%
+      text-transform: uppercase
+      margin-bottom: 4px
+   .panel__text, .panel__text2, .panel__text3, .panel__text4, .panel__text5, .panel__text6, .panel__text7, .panel__text8, .panel__text9
+      margin-top: 0
+   .accordeon__panel, .accordeon__panel2, .accordeon__panel3, .accordeon__panel4, .accordeon__panel5, .accordeon__panel6, , .accordeon__panel7, .accordeon__panel8, .accordeon__panel9
+      margin-top: 0
+   .accordeon, .accordeon2, .accordeon3, .accordeon4, .accordeon5,  .accordeon6, .accordeon7, .accordeon8, .accordeon9
+      padding: 0px 0 10px
+      border-bottom: 1px solid rgb(231, 231, 231)
+      margin-bottom: 20px
+      width: 100%
+   .accordeon4, .accordeon8, .accordeon9
+      .panel__text4
+         padding-bottom: 10px
+   .sliders_control
+      top: 65px
+   &__nums 
+      justify-content: space-between
+      margin-top: 48px
+      p 
+         color: rgb(150, 150, 150)
+         font-size: 12px
+         font-weight: 400
+         line-height: 14px
+   &__item 
+      margin-bottom: 18px
+   &__content 
+      justify-content: space-between
+      align-items: flex-start
+   &__btn 
+      width: 100%
+      height: 52.58px
+      border-radius: 3px
+      background: rgb(207, 239, 220)
+      margin-bottom: 15px
+      color: rgb(43, 176, 98)
+      font-size: 16px
+      font-weight: 400
+      line-height: 19px
+      margin-top: 35px
+      border: 1px solid rgb(207, 239, 220)
+      &:hover 
+         color: white
+         background: $green 
+   &__reject 
+      width: 100%
+      height: 52.58px
+      border-radius: 3px
+      font-size: 16px
+      font-weight: 400
+      line-height: 19px
+      box-sizing: border-box
+      border: 1px solid rgb(219, 227, 233)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      color: rgb(183, 183, 183)
+      font-size: 16px
+      font-weight: 400
+      line-height: 19px
+      text-transform: uppercase
+      &:hover 
+         color: white
+         background: $green 
+   &__banner 
+      margin-bottom: 60px
+      width: 100%
+      position: relative
+      height: 386px
+      border-radius: 3px
+      overflow: hidden
+      padding: 116px 98px 
+      img 
+         width: 100%
+         height: 100%
+         position: absolute
+         top: 0
+         left: 0
+         object-fit: cover
+      p 
+         color: rgb(255, 255, 255)
+         font-size: 70px
+         font-weight: 800
+         line-height: 70px
+         text-transform: uppercase
+         position: relative
+         z-index: 2
+   &__top 
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 70px
+      p 
+         color: rgb(48, 62, 72)
+         font-size: 16px
+         font-weight: 400
+         line-height: 19px
+      .style1
+         display: flex
+         align-items: center
+         span
+            margin-right: 20px
+            color: rgb(48, 62, 72)
+            font-size: 16px
+            font-weight: 400
+            line-height: 19px
+         .selectCF .searchCF input
+            display: none !important
+         .selectCF
+            box-sizing: border-box
+            width: 190px
+            height: 44px
+            border-radius: 5px
+            background: rgb(234, 241, 237)
+         .selectCF .titleCF
+            box-sizing: border-box
+            padding: 12px 22px 
+            color: rgb(48, 62, 72) !important
+            font-size: 16px
+            font-weight: 300
+            line-height: 19px
+         .selectCF .arrowCF
+            background: url(/img/vec.svg) no-repeat !important
+            right: 10px
+            top: 19px
+            width: 13px
+            margin-right: 0
+            margin-left: 5px
+            height: 13px
+         .onCF .arrowCF
+            top: 15px
+         .onCF li ul
+            top: 57px
+            padding-top: 8px
+            border-radius: 3px
+            left: 0
+            li 
+               &:first-child
+                  display: none !important
+   &__area 
+      display: flex
+      justify-content: flex-start
+      flex-wrap: wrap 
+   &__view 
+      border: 1px solid rgb(219, 227, 233)
+      border-radius: 3px
+      background: rgb(255, 255, 255)
+      width: 31.8%
+      margin: 0 20px 20px 0 
+      padding: 40px 22px 23px
+      &:nth-child(3n)
+         margin-right: 0
+      .card__colors 
+         margin-bottom: 10px
+   .news__nav
+      justify-content: flex-start
+   .news__nav li
+      background: rgb(234, 241, 237)
+      a
+         background: rgb(234, 241, 237)
+         font-size: 16px
+   &__text 
+      margin-top: 60px
+      color: rgb(48, 62, 72)
+      font-size: 18px
+      font-weight: 300
+      line-height: 30px
+   .information3 .accordeon__button
+      font-size: 28px
+      padding: 48px 70px 59px 54px
+   .information3 .accordeon__button.active 
+      padding-bottom: 30px
+   .information3 .accordeon__item
+      margin-bottom: 30px
+   .accordeon
+      padding-bottom: 0
+      margin-bottom: 0
+      border-bottom: none
+   .information3 .accordeon__button:after 
+      background: url(/img/1.svg) no-repeat !important
+      right: 38px
+      width: 19px
+      height: 13px
+      top: 50%
+      margin-top: -8.5px
+   .information3 .panel__text
+      max-width: 100%
+      padding-left: 54px
+      padding-right: 39px
+      padding-bottom: 44px
+   .information3
+      .panel__info 
+         color: rgb(48, 62, 72)
+         font-size: 18px
+         font-weight: 300
+         line-height: 30px
+      .accordeon__panel
+         ul 
+            padding-left: 10px
+            margin-bottom: 25px
+            li 
+               display: flex
+               align-items: flex-start
+               color: rgb(48, 62, 72)
+               font-size: 18px
+               font-weight: 300
+               line-height: 30px
+               &::before
+                  content: ""
+                  display: inline-flex
+                  flex: 1 0 auto 
+                  width: 3px
+                  height: 3px
+                  max-width: 3px 
+                  border-radius: 50%
+                  margin-right: 12px
+                  background: rgb(48, 62, 72)
+                  position: relative
+                  top: 12px
+   .accordeon__button.active:after
+      margin-top: 0.5px
+   &__big 
+      margin-bottom: 25px
+   &__category 
+      padding: 0px 0 15px
+      border-bottom: 1px solid #e7e7e7
+      margin-bottom: 15px
+      text-transform: uppercase
+      font-size: 19px
+      line-height: 120%
+      color: #000
+      display: block
+      &:hover 
+         color: $green
+      &_sub 
+         text-transform: uppercase
+         font-size: 16px
+         padding-left: 20px
+         &:last-child
+            border-bottom: none
+            padding-bottom: 0
+            margin-bottom: 50px
+      &_main 
+         display: flex
+         align-items: center
+         &:before 
+            content: ''
+            display: inline-flex
+            background: url(/img/chev.svg) no-repeat !important
+            width: 9px
+            height: 16px
+            margin-right: 7px
+.accordeon__item 
+   width: 100%
+   list-style-type: none
+.accordeon__button2, .accordeon__button3, .accordeon__button4, .accordeon__button5, .accordeon__button6, , .accordeon__button7, .accordeon__button8, .accordeon__button9
+   width: 100%
+   text-align: left
+   border: none
+   cursor: pointer
+   position: relative
+   transition: all 0.5s ease
+   font-size: 17px
+   font-weight: 700
+   color: #282828
+   display: flex
+   justify-content: space-between
+.accordeon__button2:hover, .accordeon__button3:hover, .accordeon__button4:hover, .accordeon__button5:hover, .accordeon__button6:hover, .accordeon__button7:hover, .accordeon__button8:hover, .accordeon__button9:hover 
+   color: $green
+.accordeon__button2:after, .accordeon__button3:after, .accordeon__button4:after, .accordeon__button5:after, .accordeon__button6:after, , .accordeon__button7:after, .accordeon__button8:after, .accordeon__button9:after
+   content: ""
+   position: absolute
+   right: 0px
+   background: url(/img/ss.svg) no-repeat !important
+   width: 14px
+   left: initial
+   height: 8px
+   top: 6px
+   bottom: inherit
+   margin-bottom: -20px
+   transform: rotate(180deg)
+   -webkit-transform: rotate(180deg)
+   transition: all 0.5s ease
+.accordeon__button2.active:after, .accordeon__button3.active:after, .accordeon__button4.active:after, .accordeon__button5.active:after, .accordeon__button6.active:after
+   transform: rotate(0deg)
+   -webkit-transform: rotate(0deg)
+   background: url(/img/ss.svg) no-repeat !important
+.accordeon__panel2, .accordeon__panel3, .accordeon__panel4, .accordeon__panel5, .accordeon__panel6, .accordeon__panel7, .accordeon__panel8, .accordeon__panel9
+   max-height: 0
+   overflow: hidden
+   margin-left: 0
+   transition: all 0.5s ease
+.panel__text2, .panel__text3, .panel__text4, .panel__text5, .panel__text6,  .panel__text7, .panel__text8, .panel__text9
+   list-style-type: none
+   padding-top: 0px
+   max-width: 688px
+   margin-top: 30px
+.panel__info
+   font-weight: 300
+   font-size: 16px
+   line-height: 140%
+   margin-bottom: 20px
+   &:last-child
+      margin-bottom: 0
+.menu-btn3 
+   display: none
